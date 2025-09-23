@@ -672,9 +672,15 @@ a {
 #main-content #prompts #aud-prompts p,
 #main-content #prompts #vid-prompts p {
     font-size: 18px;
-    max-width: 1000px;
-    margin: 0 auto 30px;
+    max-width: 1000px;    
     text-align: center;
+    margin: 0 auto;
+}
+
+#main-content #prompts #img-prompts p.for-your,
+#main-content #prompts #aud-prompts p.for-your,
+#main-content #prompts #vid-prompts p.for-your {
+    margin: 0 auto 30px;
 }
 
 #main-content #prompts #img-prompts .column-guide p,
@@ -1238,9 +1244,9 @@ a {
         margin: 10px 0 0;
     }
 
-    #main-content #prompts #img-prompts p#for-your,
-    #main-content #prompts #aud-prompts p#for-your,
-    #main-content #prompts #vid-prompts p#for-your {
+    #main-content #prompts #img-prompts p.for-your,
+    #main-content #prompts #aud-prompts p.for-your,
+    #main-content #prompts #vid-prompts p.for-your {
         padding-top: 5px;
     }
 
