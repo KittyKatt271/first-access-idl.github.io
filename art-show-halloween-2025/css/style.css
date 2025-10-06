@@ -840,7 +840,7 @@ a {
     padding: 75px 0;
     border: 15px ridge #7e005e;
     box-shadow: 
-        inset 0 0 25px 5px rgb(75, 75, 75),
+        inset 0 0 25px 5px #9de9ec32,
         0 0 50px 5px rgb(75, 75, 75);
         background-color: #000000ed;
 }
@@ -849,6 +849,9 @@ a {
     width: 350px;
     height: 450px;
     object-fit: cover;
+    border: 15px ridge #7e005e;
+    box-shadow: 
+        0 0 15px 7.5px #ecc09d1a;
 }
 
 #main-content .submission .sub-info {
