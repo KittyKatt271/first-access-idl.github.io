@@ -828,6 +828,19 @@ a {
     line-height: 1.75;
 }
 
+#main-content .submission {
+    display: flex;
+    max-width: 1000px;
+}
+
+#main-content .submission .sub-img-container {
+    width: 50%;
+}
+
+#main-content .submission .sub-img-container img {
+    width: 100%;
+}
+
 @media screen and (max-width: 768px) {
     .flex-container-header {
         flex-wrap: wrap;  
