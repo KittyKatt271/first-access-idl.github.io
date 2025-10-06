@@ -831,14 +831,25 @@ a {
 #main-content .submission {
     display: flex;
     max-width: 1000px;
+    gap: 5%;
+    justify-content: center;
+    margin: 25px auto;
 }
 
 #main-content .submission .sub-img-container {
-    width: 50%;
+    width: 35%;
+}
+
+#main-content .submission .sub-info {
+    width: 40%;
 }
 
 #main-content .submission .sub-img-container img {
     width: 100%;
+}
+
+#main-content .submission .sub-info h2 {
+    
 }
 
 @media screen and (max-width: 768px) {
