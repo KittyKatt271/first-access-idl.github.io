@@ -831,13 +831,20 @@ a {
 #main-content .submission {
     display: flex;
     max-width: 1000px;
-    gap: 5%;
-    justify-content: center;
-    margin: 25px auto;
+    justify-content: space-evenly;
+    margin: 50px auto 0;
+    padding: 75px 0;
+    border: 15px ridge #7e005e;
+    box-shadow: 
+        inset 0 0 25px 5px rgb(75, 75, 75),
+        0 0 50px 5px rgb(75, 75, 75);
+        background-color: #000000ed;
 }
 
 #main-content .submission .sub-img-container {
-    width: 35%;
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
 }
 
 #main-content .submission .sub-info {
@@ -846,6 +853,8 @@ a {
 
 #main-content .submission .sub-img-container img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #main-content .submission .sub-info h2 {
@@ -862,6 +871,7 @@ a {
     text-align: center;
     margin: 0;
     letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.888);
 }
 
 #main-content .submission .sub-info h3 span{
@@ -880,6 +890,7 @@ a {
     font-weight: normal;
     letter-spacing: 1px;
     margin: 10px 0 0;
+    color: rgba(255, 255, 255, 0.888);
 }
 
 #main-content .submission .sub-info .student-info h5.course {
@@ -897,6 +908,7 @@ a {
 #main-content .submission .sub-info p {
     font-size: 16px;
     margin: 0;
+    color: rgba(255, 255, 255, 0.888);
 }
 
 @media screen and (max-width: 768px) {
