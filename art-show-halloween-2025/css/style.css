@@ -845,6 +845,15 @@ a {
         background-color: #000000ed;
 }
 
+#main-content .submission.flipped .sub-img-container {
+    order: 2;
+}
+
+#main-content .submission.flipped .sub-info {
+    order: 1;
+}
+
+
 #main-content .submission.with-additional-images {
     display: block;
     padding-bottom: 40px;
@@ -860,7 +869,7 @@ a {
     padding: 0;
 }
 
-#main-content .submission.with-additional-images h2 {
+#main-content .submission.with-additional-images h2.second-header {
     text-align: center;
     font-family: "Bebas Neue";
     color: #7e005e;
@@ -972,8 +981,8 @@ a {
 }
 
 #main-content .submission .sub-info p.p-too-long {
-    font-size: 14px;
-    letter-spacing: -.5px;
+    font-size: 15px;
+    letter-spacing: -.25px;
 }
 
 @media screen and (max-width: 768px) {
