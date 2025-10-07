@@ -845,6 +845,49 @@ a {
         background-color: #000000ed;
 }
 
+#main-content .submission.with-additional-images {
+    display: block;
+    padding-bottom: 40px;
+}
+
+#main-content .submission.with-additional-images .submission {
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    margin: 0px auto;
+    padding: 0;
+}
+
+#main-content .submission.with-additional-images h2 {
+    text-align: center;
+    font-family: "Bebas Neue";
+    color: #7e005e;
+    letter-spacing: 2px;
+    font-size: 35px;
+    margin: 50px 0 25px;
+}
+
+#main-content .submission .additional-images {
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    margin: 0px auto;
+    padding: 0;
+}
+
+#main-content .submission .additional-images .sub-img-container {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border: 10px ridge #7e005e;
+    box-shadow: 0 0 15px 7.5px #ecc09d1a;
+    transition: .5s ease-in-out;
+}
+
 #main-content .submission .sub-img-container {
     width: 350px;
     height: 450px;
@@ -926,6 +969,11 @@ a {
     font-size: 16px;
     margin: 0;
     color: rgba(255, 255, 255, 0.888);
+}
+
+#main-content .submission .sub-info p.p-too-long {
+    font-size: 14px;
+    letter-spacing: -.5px;
 }
 
 @media screen and (max-width: 768px) {
