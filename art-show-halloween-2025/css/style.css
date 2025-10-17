@@ -856,7 +856,7 @@ a {
 }
 
 #main-content .submission.audio  .audio-sub-container .sub-aud-container {
-    border: 10px ridge #7e005e;
+    border: 6.5px ridge #7e005e;
     box-shadow: 0 0 15px 7.5px #ecc09d1a;
     border-radius: 100px;
     transition: .5s ease-in-out;
