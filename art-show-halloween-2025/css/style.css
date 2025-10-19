@@ -934,6 +934,14 @@ a {
     transition: .5s ease-in-out;
 }
 
+#main-content .submission .additional-images .sub-img-container.marsh {
+    height: 300px;
+}
+
+#main-content .submission .sub-img-container.marsh {
+    height: 525px;
+}
+
 #main-content .submission .sub-img-container {
     width: 350px;
     height: 450px;
@@ -1018,8 +1026,8 @@ a {
 }
 
 #main-content .submission .sub-info p.p-too-long {
-    font-size: 15px;
-    letter-spacing: -.25px;
+    font-size: 14px;
+    letter-spacing: -.5px;
 }
 
 @media screen and (max-width: 768px) {
