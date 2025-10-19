@@ -955,10 +955,24 @@ a {
     width: 40%;
 }
 
-#main-content .submission.landscape .sub-img-container {
+#main-content .submission.landscape .sub-img-container{
     width: 850px;
     height: 500px;
     margin: 0 auto;
+}
+
+#main-content #submission-gallery .submission.video.landscape .sub-vid-container {
+    width: 850px;
+    height: 500px;
+    margin: 0 auto;
+    object-fit: cover;
+    border: 15px ridge #7e005e;
+    box-shadow: 0 0 15px 7.5px #ecc09d1a;
+    transition: .5s ease-in-out;
+}
+
+#main-content #submission-gallery .submission.video.landscape .sub-vid-container video {
+    width: 100%;
 }
 
 #main-content .submission .sub-info.header {
@@ -966,6 +980,7 @@ a {
     margin: 0 auto 35px;
     text-align: center;
 }
+
 
 #main-content .submission .sub-info.header .student-info .student-info {
     display: block;

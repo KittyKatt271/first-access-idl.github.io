@@ -21,4 +21,15 @@ for (let i = 0; i < closers.length; i++) {
         lightbox.src = "";
         lightbox.alt = "";
     }
+
+    let galleryVideos = document.getElementsByClassName('galleryVideo');
+}
+
+for (let i = 0; i < galleryVideos.length; i++) {
+    let galleryVideo = galleryVideos[i];
+    galleryVideo.onclick = function() {
+        lightboxContainer.classList.add('display');
+        lightbox.src = this.src;
+        lightbox.alt = this.alt;
+    }
 }
