@@ -15,6 +15,7 @@
         <link href="css/headerstyle.css" rel="stylesheet">
         <link href="css/submission-form.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/lightbox.css" rel="stylesheet">
     </head>
     <body>
         <!--Begin Header Bar-->
@@ -316,14 +317,675 @@
         <!--End Submission Form Modal-->
 
         <!--Begin Main Content-->
-        <div id="main-content">
-            <h1 id="review">Submissions are currently under review</h1>
+        <div id="main-content" class="gallery">
+            <h1 id="gallery-head">Submission Gallery</h1>
 
-            <h2 id="view-date">
-                They will be available to view on October 20<sup>th</sup>
+            <h2>
+                Mobile Compatibility of the Gallery is currently in progress.
             </h2>
+
+            <h2>Please view on Desktop for best results.</h2>
+
+            <div id="submission-gallery">
+                <div class="submission video landscape">
+                    <div class="sub-info header">
+                        <h2>Driving Me Crazy</h2>
+
+                        <div class="student-info">
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Digital Film & Video Production
+                                </h5>
+
+                                <h5 hidden>Cohort: </h5>
+                            </div>
+
+                            <h3>Created by: <span>Dustin Campbell</span></h3>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-vid-container">
+                        <video controls
+                            class="galleryVideo"
+                            src="video-submissions/Driving-Me-Crazy-Final-Version_compressed.mp4"
+                            alt="Driving Me Crazy - Film Submission by Dustin Campbell"
+                        >
+                            Sorry, your browser doesn't support the <video> tag
+                        </video>
+                    </div>
+
+                    <div class="sub-info container">
+                        <div class="student-info">
+                            <h4 hidden>About the Artist</h4>
+
+                            <p>
+                                
+                            </p>
+                        </div>
+
+                        <div class="student-info">
+                            <h4 hidden>About the Piece</h4>
+
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission">
+                    <div class="sub-img-container ">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/butcherman-hotel-jeremiah-cherubin.jpg"
+                            alt="Butcherman Hotel - Photography Submission by Jeremiah Cherubin"
+                        >
+                    </div>
+
+                    <div class="sub-info">
+                        <h2>Butcherman Hotel</h2>
+
+                        <h3>Created by: <span>Jeremiah Cherubin</span></h3>
+
+                        <div class="student-info">
+                            <h5 class="course">Digital Photography</h5>
+
+                            <h5>Cohort: 3017</h5>
+                        </div>
+
+                        <h4>About the Artist</h4>
+
+                        <p>
+                            I really love photography because there is a lot of 
+                            emotions put into these photographs and there's also 
+                            the different compositions and techniques that 
+                            people use intheir photography.
+                        </p>
+
+                        <h4>About the Piece</h4>
+
+                        <p>
+                            This piece was inspired by the tower of terror.
+                        </p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission with-additional-images flipped">
+                    <div class="submission">
+                        <div class="sub-img-container ">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/The-Black-Cat-Compressed-Gif-loop.gif"
+                                alt="The Black Cat - Graphic Design Submission by Katt Woodworth"
+                            >
+                        </div>
+
+                        <div class="sub-info">
+                            <h2>The Black Cat</h2>
+
+                            <h3>Created by: <span>Katt Woodworth</span></h3>
+
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Graphic Design & Web Development
+                                </h5>
+
+                                <h5>Cohort: 6027</h5>
+                            </div>
+
+                            <h4>About the Artist</h4>
+
+                            <p class="p-too-long">
+                                Katt Woodworth is an aspiring graphic and web 
+                                designer, with a passion of storytelling and 
+                                atmosphere. Drawing inspiration from horror, gothic, 
+                                and fantasy themes, her work explores the emotional 
+                                depth and haunting beauty found within the darkness.
+
+                            </p>
+
+                            <h4>About the Piece</h4>
+
+                            <p class="p-too-long">
+                                Inspired by Edgar Allan Poe's “The Black Cat,” this 
+                                piece captures the story's descent into madness, 
+                                where guilt festers into blinding rage and echoes a 
+                                mind unraveling beneath the weight of its own deeds. 
+                                Through the interplay of shadow and flame, it 
+                                reflects key elements of the tale, providing a 
+                                visual representation of the narrative.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2 class="second-header">Additional Imagery</h2>
+
+                    <div class="additional-images">
+                        <div class="sub-img-container ">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/The-Black-Cat-Still-V1.jpg"
+                                alt="The Black Cat Still 1- Graphic Design Submission by Katt Woodworth"
+                            >
+                        </div>
+
+                        <div class="sub-img-container ">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/The-Black-Cat-Still-V2.jpg"
+                                alt="The Black Cat Still 2 - Graphic Design Submission by Katt Woodworth"
+                            >
+                        </div>
+
+                        <div class="sub-img-container ">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/The-Black-Cat-Still-V3.jpg"
+                                alt="The Black Cat Still 3- Graphic Design Submission by Katt Woodworth"
+                            >
+                        </div>
+
+                        <div class="sub-img-container ">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/The-Black-Cat-Still-V4.jpg"
+                                alt="The Black Cat Still 4- Graphic Design Submission by Katt Woodworth"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission landscape">
+                    <div class="sub-info header">
+                        <h2>The Seven Characters of Halloween</h2>
+
+                        <div class="student-info">
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Graphic Design & Web Development
+                                </h5>
+
+                                <h5>Cohort: 6027</h5>
+                            </div>
+
+                            <h3>Created by: <span>Bryce Vaughan</span></h3>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-img-container landscape">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/the-seven-characters-of-halloween.PNG"
+                            alt="The Seven Characters of Halloween - Graphic Design Submission by Bryce Vaughan"
+                        >
+                    </div>
+
+                    <div class="sub-info container">
+                        <div class="student-info shorter">
+                            <h4>About the Artist</h4>
+
+                            <p>
+                                I'm a 23-year-old graphic design student who takes a 
+                                lot of inspiration from older animated media 
+                                (especially from video games and cartoons of the 
+                                time), and tries to incorporate that into my own 
+                                creations, wherever possible.
+                            </p>
+                        </div>
+
+                        <div class="student-info longer">
+                            <h4>About the Piece</h4>
+
+                            <p>
+                                I went with a more lighthearted and cartoony spin on 
+                                the whole Halloween theme in this one, featuring the 
+                                seven unnamed characters (the skeleton, ghost, black 
+                                cat, and Jack-O-Lantern, confronting an evil witch, 
+                                vampire, and bat). Outside of the wider mix of 
+                                smaller inspirations (in terms of character choice 
+                                and such), the only true inspiration I can think of 
+                                for this one is an earlier, unrelated piece that I 
+                                drew almost a week prior to this. Other than that, 
+                                you could say that this was basically improvised.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission audio">
+                    <div class="audio-sub-container">
+                        <div class="sub-aud-container ">
+                        <audio 
+                                controls 
+                                src="audio-submissions/no-one-home.mp3"
+                                alt="No One Home - Recording Submission by Mel Long"
+                            >
+                                Your browser does not support the <audio> element.
+                            </audio>
+                        </div>
+
+                        <div class="sub-info audio-title">
+                            <h2>No One Home</h2>
+
+                            <h3>Created by: <span>Mel Long</span></h3>
+
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Recording Arts & Show Production
+                                </h5>
+
+                                <h5>Cohort: 351</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub-info audio-about">
+                        <div class="about-container">
+                            <h4>About the Artist</h4>
+
+                            <p>
+                                Once an aspiring book editor, Mel Long is following 
+                                a new dream to become an audio engineer. She had no 
+                                idea what to expect when she began her journey at 
+                                F.I.R.S.T. Institute, and now she is thrilled to be 
+                                here. No One Home is one of the six songs she made 
+                                in 101 and her classmates' favorite.
+                            </p>
+                        </div>
+
+                        <div class="about-container">
+                            <h4>About the Piece</h4>
+
+                            <p>
+                                Have you ever had a nightmare that you were left all 
+                                alone in the world? You know that feeling of dread 
+                                and loneliness that washes over you? That is what No 
+                                One Home is meant to encompass: those moments when 
+                                you feel lost and alone and don't know what to do 
+                                ... because you never imagined there'd be a time 
+                                when no one was there for you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission landscape">
+                    <div class="sub-info header">
+                        <h2>The Plague Doctor</h2>
+
+                        <div class="student-info">
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Digital Photography
+                                </h5>
+
+                                <h5>Cohort: 7017</h5>
+                            </div>
+
+                            <h3>Created by: <span>Daniel LaFond</span></h3>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-img-container landscape">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/the-plague-doctor.jpg"
+                            alt="The Plague Doctor - Photography Submission by Daniel LaFond"
+                        >
+                    </div>
+
+                    <div class="sub-info container">
+                        <div class="student-info">
+                            <h4>About the Artist</h4>
+
+                            <p>
+                                I am a 43-year-old father of four currently 
+                                pursuing a degree in digital photography. My 
+                                goal is to establish a photography studio that 
+                                specializes in portraiture and fine art, 
+                                combining technical expertise with creative 
+                                vision to deliver compelling, high-quality 
+                                imagery.
+                            </p>
+                        </div>
+
+                        <div class="student-info">
+                            <h4>About the Piece</h4>
+
+                            <p>
+                                The plague doctor waits in silence, mask 
+                                gleaming, hands poised. His next victim...ah, 
+                                patient draws near... unaware of the cure that 
+                                may cost more than the disease.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission with-additional-images flipped">
+                    <div class="submission">
+                        <div class="sub-img-container marsh">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/marshpuffers-backstory.jpg"
+                                alt="Marshpuffers Backstory - Graphic Design Submission by Jose Pomales"
+                            >
+                        </div>
+
+                        <div class="sub-info">
+                            <h2>Marshpuffers</h2>
+
+                            <h3>Created by: <span>Jose Pomales</span></h3>
+
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Graphic Design & Web Development
+                                </h5>
+
+                                <h5>Cohort: 2025</h5>
+                            </div>
+
+                            <h4>About the Artist</h4>
+
+                            <p>
+                                I'm a graphic designer who enjoys working on 
+                                projects and logos in Adobe Illustrator, 
+                                Photoshop, InDesign, etc. I also enjoy 
+                                collaborating with others on their projects and 
+                                more.
+
+                            </p>
+
+                            <h4>About the Piece</h4>
+
+                            <p>
+                                From 102 I created The MarshPuffers the three 
+                                marshmallow mascots for my cereal project. Each  
+                                The three flavored marshmallows that will give 
+                                everyone the taste of their lifetime, and enjoy 
+                                some tasty s'mores.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2 class="second-header">Additional Imagery</h2>
+
+                    <div class="additional-images">
+                        <div class="sub-img-container marsh ">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/marshpuffers-emote.jpg"
+                                alt="Marshpuffers Emotions - Graphic Design Submission by Jose Pomales"
+                            >
+                        </div>
+
+                        <div class="sub-img-container marsh">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/marshpuffers-mockup.jpg"
+                                alt="Marshpuffers Mockups - Graphic Design Submission by Jose Pomales"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission">
+                    <div class="sub-img-container ">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/the-blackened-heart.jpg"
+                            alt="The Blackened Heart - Photography Submission by Abram Spinney"
+                        >
+                    </div>
+
+                    <div class="sub-info">
+                        <h2>The Blackened Heart</h2>
+
+                        <h3>Created by: <span>Abram Spinney</span></h3>
+
+                        <div class="student-info">
+                            <h5 class="course">Digital Photography</h5>
+
+                            <h5>Cohort: 7015</h5>
+                        </div>
+
+                        <h4>About the Artist</h4>
+
+                        <p class="p-too-long">
+                            I'm a fan of all things spooky and mysterious which 
+                            I enjoy conveying in both photography and writing. 
+                            Horror has been very influential for me as both a 
+                            creative and an individual. I particularly enjoy 
+                            using props and other materials on hand to create 
+                            visual that express the frightening and humorous 
+                            nature of the genre. Outside of Horror, I also have 
+                            a fondness for old architecture, abandoned 
+                            structures, nature, and sunsets.
+                        </p>
+
+                        <h4>About the Piece</h4>
+
+                        <p class="p-too-long">
+                            A very experimental piece I created during the 
+                            process of an assignment. It presents a blackened 
+                            heart where its cruel and malevolence manifests 
+                            itself as a twisted and grotesque spirit. The items 
+                            used were a few Halloween props I acquired, a single 
+                            flashlight, and a pair of false candles which 
+                            working together created this sight of evil's 
+                            emergence.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="submission video landscape">
+                    <div class="sub-info header">
+                        <h2>
+                            D-LON DA JUICE MAKING <br> DARK TRAP TYPE BEAT ON 
+                            MPC LIVE 2 
+                        </h2>
+
+                        <div class="student-info">
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Recording Arts & Show Production
+                                </h5>
+
+                                <h5>Cohort: 4026</h5>
+                            </div>
+
+                            <h3>Created by: <span>De Lontae Whitaker</span></h3>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-vid-container">
+                        <video controls
+                            class="galleryVideo"
+                            src="video-submissions/da-juice.mp4"
+                            alt="D-LON DA JUICE MAKING DARK TRAP TYPE BEAT ON MPC LIVE 2 - Recording Submission by De Lontae Whitaker"
+                        >
+                            Sorry, your browser doesn't support the <video> tag
+                        </video>
+                    </div>
+
+                    <div class="sub-info container">
+                        <div class="student-info">
+                            <h4>About the Artist</h4>
+
+                            <p class="longer p-too-long">
+                                Born and raised in Houston, Texas, I’m an audio 
+                                engineer and sound artist with a lifelong 
+                                devotion to the power of music. My journey began 
+                                in the early 2000s with the underground label 
+                                Beltway 8 Records, where I performed as a rapper 
+                                and first discovered my passion for making 
+                                beats. Since then, I’ve worked with numerous 
+                                talented artists, developing a reputation for 
+                                creative production and sharp engineering 
+                                skills. I’ve also had the privilege of sharing 
+                                the stage with one of my greatest influences, 
+                                Bizzy Bone, on multiple occasions—moments that 
+                                fueled my drive to master the art of sound. 
+                                Today, I merge my technical expertise with a 
+                                deep spiritual focus through sound therapy, 
+                                using frequency and vibration as tools for 
+                                healing and transformation. Every project I take 
+                                on is driven by the same purpose: to create 
+                                sound that moves, inspires, and elevates the 
+                                human spirit.
+                            </p>
+                        </div>
+
+                        <div class="student-info">
+                            <h4>About the Piece</h4>
+
+                            <p class="shorter p-too-long">
+                                I created this video to showcase my skills in 
+                                videography, graphic design, and beat making. 
+                                The outboard gear that was used to make this 
+                                beat is a MPC LIVE 2.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission">
+                    <div class="sub-img-container ">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/Killer.jpg"
+                            alt="Killer - Photography Submission by Ethan Bradley"
+                        >
+                    </div>
+
+                    <div class="sub-info">
+                        <h2>Killer</h2>
+
+                        <h3>Created by: <span>Ethan Bradley</span></h3>
+
+                        <div class="student-info">
+                            <h5 class="course">Digital Photography</h5>
+
+                            <h5>Cohort: 3017</h5>
+                        </div>
+
+                        <h4>About the Artist</h4>
+
+                        <p>
+                            I'I like making photos that are dark, moody, and 
+                            dramatic.
+                        </p>
+
+                        <h4>About the Piece</h4>
+
+                        <p>
+                            Born and raised a killer, a man with no morals and 
+                            no purpose other than killing whoever stands in the 
+                            way of his mission.
+                        </p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission landscape">
+                    <div class="sub-info header">
+                        <h2>Whispers of the Moon</h2>
+
+                        <div class="student-info">
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Graphic Design & Web Development
+                                </h5>
+
+                                <h5>Cohort: 7007</h5>
+                            </div>
+
+                            <h3>Created by: <span>Rachel Johnson</span></h3>
+                        </div>
+                        <div class="student-info">
+                            
+                        </div>
+                    </div>
+
+                    <div class="sub-img-container landscape multi">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/v2_compressed.png"
+                            alt="Whispers of the Moon Version 2 - Photography Submission by Rachel Johnson"
+                        >
+                    </div>
+                    
+                    <div class="sub-img-container landscape multi">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/v3_compressed.png"
+                            alt="Whispers of the Moon Version 1 - Photography Submission by Rachel Johnson"
+                        >
+                    </div>
+
+                    <div class="sub-img-container landscape">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/v1_compressed.png"
+                            alt="Whispers of the Moon Version 3 - Photography Submission by Rachel Johnson"
+                        >
+                    </div>
+
+                    <div class="sub-info container">
+                        <div class="student-info pic-instead-p">
+                            <h4>About the Artist</h4>
+
+                            <div class="sub-img-container about-img">
+                                <img
+                                    class="galleryImage"
+                                    src="images/submissions/AboutMe_compressed.jpg"
+                                    alt="About the Artist - Rachel Johnson"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="student-info pic-instead-p">
+                            <h4>About the Piece</h4>
+
+                            <div class="sub-img-container about-img">
+                                <img
+                                    class="galleryImage"
+                                    src="images/submissions/AboutPiece_compressed.jpg"
+                                    alt="About the Piece - Rachel Johnson"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--End Main Content-->
+
+        <!-- Lightbox Code -->
+        <div id="lightboxContainer">
+            <div id="lightboxBackground" class="closer"></div>
+            <img id="lightbox" src="" alt="">
+            <span id="lightboxCloser" class="closer">×</span>
+        </div> 
+        <!-- End Lightbox Code -->
         
         <!--Begin Footer-->
         <div id="footer">
@@ -573,5 +1235,6 @@
         <script src="java/submitcountdown.js"></script>
         <script src="java/f-showcountdown.js"></script>
         <script src="java/f-submitcountdown.js"></script>
+        <script src="java/lightbox.js"></script>
     </body>
 </html>

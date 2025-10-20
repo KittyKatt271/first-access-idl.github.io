@@ -1100,6 +1100,18 @@ a {
     letter-spacing: -.5px;
 }
 
+#main-content #gallery-head {
+    font-size: 100px;
+}
+
+#main-content.gallery {
+    padding-top: 50px;
+}
+
+#main-content.gallery h2 {
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     .flex-container-header {
         flex-wrap: wrap;  
