@@ -1018,6 +1018,11 @@ a {
     object-fit: cover;
 }
 
+#main-content .submission .sub-img-container.about-img {
+    width: 400px;
+    height: 500px;
+}
+
 #main-content .submission .sub-img-container:hover {
     cursor: pointer;
     transform: scale(105%);
