@@ -1112,6 +1112,18 @@ a {
     text-align: center;
 }
 
+#sub-deadline.closed {
+    padding-bottom: 75px;
+}
+
+#main-content.gallery #thanks {
+    font-family: "Great Sejagad";
+    font-size: 100px;
+    font-weight: normal;
+    margin: 0;
+    padding: 40px 0 75px;
+}
+
 @media screen and (max-width: 768px) {
     .flex-container-header {
         flex-wrap: wrap;  
