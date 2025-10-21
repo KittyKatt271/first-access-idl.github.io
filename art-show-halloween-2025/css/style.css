@@ -956,7 +956,7 @@ a {
 }
 
 #main-content .submission.landscape .sub-img-container {
-    width: 825px;
+    width: 830px;
     height: 500px;
     margin: 0 auto;
 }
@@ -966,8 +966,8 @@ a {
 }
 
 #main-content #submission-gallery .submission.video.landscape .sub-vid-container {
-    width: 825px;
-    height: 500px;
+    width: 830px;
+    height: 480px;
     margin: 0 auto;
     object-fit: cover;
     border: 15px ridge #7e005e;
