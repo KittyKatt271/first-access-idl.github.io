@@ -961,6 +961,10 @@ a {
     letter-spacing: -.5px;
 }
 
+#main-content #submission-gallery .submission.black-heart {
+    align-items: center;
+}
+
 /*Flipped Submission*/
 #main-content #submission-gallery .submission.flipped .sub-img-container {
     order: 2;
@@ -1017,10 +1021,11 @@ a {
 
 #main-content #submission-gallery .submission .additional-images .sub-img-container.marsh {
     height: 300px;
+    width: 24%;
 }
 
 #main-content #submission-gallery .submission .sub-img-container.marsh {
-    height: 525px;
+    height: 575px;
 }
 
 /*Landscape Submission*/
@@ -1177,7 +1182,7 @@ a {
 
 /*Video Submission*/
 #main-content #submission-gallery .submission.video.landscape .sub-vid-container {
-    width: 87%;
+    width: 100%;
     margin: 0 auto;
     object-fit: cover;
     border: 15px ridge #7e005e;
