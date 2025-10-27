@@ -828,279 +828,22 @@ a {
     line-height: 1.75;
 }
 
-#main-content #submission-gallery {
+#sub-deadline.closed {
     padding-bottom: 75px;
 }
 
-#main-content .submission {
-    display: flex;
-    max-width: 85%;
-    justify-content: space-evenly;
-    margin: 50px auto 0;
-    padding: 5% 0;
-    border: 15px ridge #7e005e;
-    box-shadow: 
-        inset 0 0 25px 5px #9de9ec32,
-        0 0 50px 5px rgb(75, 75, 75);
-        background-color: #000000ed;
-}
-
-#main-content .submission.audio {
-    display: block;
-}
-
-#main-content .submission.audio  .audio-sub-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#main-content .submission.audio  .audio-sub-container .sub-aud-container {
-    border: 6.5px ridge #7e005e;
-    box-shadow: 0 0 15px 7.5px #ecc09d1a;
-    border-radius: 100px;
-    transition: .5s ease-in-out;
-    width: 40%;
-}
-
-#main-content .submission.audio  .audio-sub-container .sub-aud-container:hover {
-    cursor: pointer;
-    transform: scale(105%);
-    box-shadow: 0 0 15px 7.5px #ecc09d33;
-}
-
-#main-content .submission.audio  .audio-sub-container .sub-aud-container audio {
-    display: block;
-    width: 100%;
-}
-
-#main-content .submission.audio  .sub-info.audio-about {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#main-content .submission.audio  .sub-info.audio-about .about-container {
-    width: 40%;
-}
-
-#main-content .submission.flipped .sub-img-container {
-    order: 2;
-}
-
-#main-content .submission.flipped .sub-info {
-    order: 1;
-}
-
-
-#main-content .submission.with-additional-images {
-    display: block;
-    padding-bottom: 40px;
-}
-
-#main-content .submission.with-additional-images .submission {
-    display: flex;
-    justify-content: space-evenly;
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    margin: 0px auto;
-    padding: 0;
-}
-
-#main-content .submission.with-additional-images h2.second-header {
-    text-align: center;
-    font-family: "Bebas Neue";
-    color: #7e005e;
-    letter-spacing: 2px;
-    font-size: 3vw;
-    margin: 50px 0 25px;
-}
-
-#main-content .submission .additional-images {
-    display: flex;
-    justify-content: space-evenly;
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    margin: 0px auto;
-    padding: 0;
-}
-
-#main-content .submission .additional-images .sub-img-container {
-    width: 20%;
-    height: 5%;
-    object-fit: cover;
-    border: 10px ridge #7e005e;
-    box-shadow: 0 0 15px 7.5px #ecc09d1a;
-    transition: .5s ease-in-out;
-}
-
-#main-content .submission .additional-images .sub-img-container.marsh {
-    height: 300px;
-}
-
-#main-content .submission .sub-img-container.marsh {
-    height: 525px;
-}
-
-#main-content .submission .sub-img-container {
-    width: 37%;
-    height: 450px;
-    object-fit: cover;
-    border: 15px ridge #7e005e;
-    box-shadow: 0 0 15px 7.5px #ecc09d1a;
-    transition: .5s ease-in-out;
-}
-
-#main-content .submission .sub-info {
-    width: 40%;
-}
-
-#main-content .submission.landscape .sub-img-container {
-    width: 87%;
-    height: 500px;
-    margin: 0 auto;
-}
-
-#main-content .submission.landscape .sub-img-container.landscape.multi {
-    margin-bottom: 50px;
-}
-
-#main-content #submission-gallery .submission.video.landscape .sub-vid-container {
-    width: 87%;
-    margin: 0 auto;
-    object-fit: cover;
-    border: 15px ridge #7e005e;
-    box-shadow: 0 0 15px 7.5px #ecc09d1a;
-    transition: .5s ease-in-out;
-}
-
-#main-content #submission-gallery .submission.video.landscape .sub-vid-container video {
-    width: 100%;
-    display: block;
-}
-
-#main-content .submission .sub-info.header {
-    width: 85%;
-    margin: 0 auto 35px;
-    text-align: center;
-}
-
-
-#main-content .submission .sub-info.header .student-info .student-info {
-    display: block;
-    text-align: start;
-}
-
-#main-content .submission .sub-info.container {
-    display: flex;
-    width: 85%;
-    margin: 0 auto;
-    justify-content: space-between;
-}
-
-#main-content .submission .sub-info.container .student-info {
-    display: block;
-    width: 45%;
-    margin-top: 25px;
-}
-
-#main-content .submission .sub-info.container .student-info.longer {
-    width: 55%;
-}
-
-#main-content .submission .sub-info.container .student-info.shorter {
-    width: 35%;
-}
-
-#main-content .submission.landscape {
-    display: block;
-}
-
-#main-content #submission-gallery .submission.landscape .sub-info.container .student-info.pic-instead-p h4{
-    text-align: center;
-}
-#main-content .submission .sub-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-#main-content .submission .sub-img-container.about-img {
-    width: 100%;
-    height: 500px;
-    margin-top: 20px;
-}
-
-#main-content .submission .sub-img-container:hover {
-    cursor: pointer;
-    transform: scale(105%);
-    box-shadow: 0 0 15px 7.5px #ecc09d33;
-}
-
-#main-content #submission-gallery #lightboxContainer img#lightbox {
-    object-fit: contain;
-}
-
-#main-content .submission .sub-info h2 {
+#main-content.gallery #thanks {
     font-family: "Great Sejagad";
+    font-size: 10vw;
     font-weight: normal;
-    font-size: 4vw;
-    color: #7e005e;
     margin: 0;
+    padding: 40px 0 75px;
 }
 
-#main-content .submission .sub-info h3 {
-    font-family: "Bebas Neue";
-    font-size: 1.5vw;
-    text-align: center;
-    margin: 0;
-    letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.888);
-}
 
-#main-content .submission .sub-info h3 span{
-    font-weight: normal;
-    font-size: 3vw;
-    letter-spacing: 1px;
-}
-
-#main-content .submission .sub-info .student-info {
-    display: flex;
-    justify-content: space-between;
-}
-
-#main-content .submission .sub-info .student-info h5 {
-    font-size: 1.1vw;
-    font-weight: normal;
-    letter-spacing: 1px;
-    margin: 10px 0 0;
-    color: rgba(255, 255, 255, 0.888);
-}
-
-#main-content .submission .sub-info .student-info h5.course {
-    font-weight: bolder;
-}
-
-#main-content .submission .sub-info h4 {
-    font-family: "Bebas Neue";
-    font-size: 2vw;
-    margin: 30px 0 5px;
-    letter-spacing: 2px;
-    padding: 0;
-}
-
-#main-content .submission .sub-info p {
-    font-size: 1.4vw;
-    margin: 0;
-    color: rgba(255, 255, 255, 0.888);
-}
-
-#main-content .submission .sub-info p.p-too-long {
-    font-size: 1.25vw;
-    letter-spacing: -.5px;
+/*Gallery*/
+#main-content #submission-gallery {
+    padding-bottom: 75px;
 }
 
 #main-content #gallery-head {
@@ -1115,16 +858,231 @@ a {
     text-align: center;
 }
 
-#sub-deadline.closed {
-    padding-bottom: 75px;
+/*Submission*/
+#main-content #submission-gallery .submission {
+    display: flex;
+    max-width: 85%;
+    justify-content: space-between;
+    padding: 5%;
+    margin: 0 auto;
+    border: 15px ridge #7e005e;
+    box-shadow: 
+        inset 0 0 25px 5px #9de9ec32,
+        0 0 50px 5px rgb(75, 75, 75);
+        background-color: #000000ed;
 }
 
-#main-content.gallery #thanks {
+#main-content #submission-gallery .submission .sub-img-container {
+    width: 45%;
+    height: 450px;
+    object-fit: cover;
+    border: 15px ridge #7e005e;
+    box-shadow: 0 0 15px 7.5px #ecc09d1a;
+    transition: .5s ease-in-out;
+}
+
+#main-content #submission-gallery .submission .sub-img-container:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    box-shadow: 0 0 15px 7.5px #ecc09d33;
+}
+
+#main-content #submission-gallery .submission .sub-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#main-content #submission-gallery #lightboxContainer img#lightbox {
+    object-fit: contain;
+}
+
+#main-content #submission-gallery .submission .sub-info {
+    width: 45%;
+}
+
+#main-content #submission-gallery .submission .sub-info h2 {
     font-family: "Great Sejagad";
-    font-size: 10vw;
     font-weight: normal;
+    font-size: 4vw;
+    color: #7e005e;
     margin: 0;
-    padding: 40px 0 75px;
+}
+
+#main-content #submission-gallery .submission .sub-info h3 {
+    font-family: "Bebas Neue";
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.888);
+}
+
+#main-content #submission-gallery .submission .sub-info h3 span{
+    font-weight: normal;
+    font-size: 3vw;
+    letter-spacing: 1px;
+}
+
+#main-content #submission-gallery .submission .sub-info .student-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-content #submission-gallery .submission .sub-info .student-info h5 {
+    font-size: 1.1vw;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 10px 0 0;
+    color: rgba(255, 255, 255, 0.888);
+}
+
+#main-content #submission-gallery .submission .sub-info .student-info h5.course {
+    font-weight: bolder;
+}
+
+#main-content #submission-gallery .submission .sub-info h4 {
+    font-family: "Bebas Neue";
+    font-size: 2vw;
+    margin: 30px 0 5px;
+    letter-spacing: 2px;
+    padding: 0;
+}
+
+#main-content #submission-gallery .submission .sub-info p {
+    font-size: 1.4vw;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.888);
+}
+
+#main-content #submission-gallery .submission .sub-info p.p-too-long {
+    font-size: 1.25vw;
+    letter-spacing: -.5px;
+}
+
+/*Flipped Submission*/
+#main-content #submission-gallery .submission.flipped .sub-img-container {
+    order: 2;
+}
+
+#main-content #submission-gallery .submission.flipped .sub-info {
+    order: 1;
+}
+
+/*Additional Image Submission*/
+#main-content #submission-gallery .submission.with-additional-images {
+    display: block;
+    padding-bottom: 40px;
+}
+
+#main-content #submission-gallery .submission.with-additional-images .submission {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    margin: 0px auto;
+    padding: 0;
+    max-width:100%;
+}
+
+#main-content #submission-gallery .submission.with-additional-images h2.second-header {
+    text-align: center;
+    font-family: "Bebas Neue";
+    color: #7e005e;
+    letter-spacing: 2px;
+    font-size: 3vw;
+    margin: 50px 0 25px;
+}
+
+#main-content #submission-gallery .submission .additional-images {
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    margin: 0px auto;
+    padding: 0;
+}
+
+#main-content #submission-gallery .submission .additional-images .sub-img-container {
+    width: 20%;
+    height: 5%;
+    object-fit: cover;
+    border: 10px ridge #7e005e;
+    box-shadow: 0 0 15px 7.5px #ecc09d1a;
+    transition: .5s ease-in-out;
+}
+
+#main-content #submission-gallery .submission .additional-images .sub-img-container.marsh {
+    height: 300px;
+}
+
+#main-content #submission-gallery .submission .sub-img-container.marsh {
+    height: 525px;
+}
+
+/*Landscape Submission*/
+#main-content #submission-gallery .submission.landscape {
+    display: block;
+}
+
+#main-content #submission-gallery .submission.landscape .sub-img-container {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#main-content #submission-gallery .submission.landscape .sub-img-container.landscape.multi {
+    margin-bottom: 50px;
+}
+
+#main-content #submission-gallery .submission .sub-info.header {
+    width: 100%;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+#main-content #submission-gallery .submission .sub-info.header .student-info .student-info {
+    display: block;
+    text-align: start;
+}
+
+#main-content #submission-gallery .submission .sub-info.container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+#main-content #submission-gallery .submission .sub-info.container .student-info {
+    display: block;
+    width: 45%;
+    margin-top: 25px;
+}
+
+#main-content #submission-gallery .submission .sub-info.container .student-info.longer {
+    width: 55%;
+}
+
+#main-content #submission-gallery .submission .sub-info.container .student-info.shorter {
+    width: 35%;
+}
+
+#main-content #submission-gallery .submission.landscape .sub-info.container .student-info.pic-instead-p h4{
+    text-align: center;
+}
+
+#main-content #submission-gallery .submission .sub-img-container.about-img {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+/*Square Submission*/
+#main-content #submission-gallery .submission.square {
+    align-items: center;
 }
 
 #main-content #submission-gallery .submission.square .sub-img-container {
@@ -1137,24 +1095,19 @@ a {
     width: 35%;
 }
 
-#main-content #submission-gallery .submission.square.extra-text .sub-info {
-    width: 85%;
-    margin: 0 auto;
-}
-
-#main-content #submission-gallery .submission.square {
-    align-items: center;
-}
-
 #main-content #submission-gallery .submission.square.extra-text {
     align-items: center;
     display: block;
 }
 
+#main-content #submission-gallery .submission.square.extra-text .sub-info {
+    width: 100%;
+    margin: 0 auto;
+}
+
 #main-content #submission-gallery .submission.square.extra-text .flex-container {
     display: flex;
     justify-content: space-between;
-    width: 85%;
     margin: 0 auto;
     align-items: center;
 }
@@ -1180,6 +1133,61 @@ a {
 
 #main-content #submission-gallery .submission.square.extra-text .sub-info .p-flex-container .p-container p.margin {
     margin-bottom: 15px;
+}
+
+/*Audio Submission*/
+#main-content #submission-gallery .submission.audio {
+    display: block;
+}
+
+#main-content #submission-gallery .submission.audio  .audio-sub-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-content #submission-gallery .submission.audio  .audio-sub-container .sub-aud-container {
+    border: 6.5px ridge #7e005e;
+    box-shadow: 0 0 15px 7.5px #ecc09d1a;
+    border-radius: 100px;
+    transition: .5s ease-in-out;
+    width: 45%;
+}
+
+#main-content #submission-gallery .submission.audio  .audio-sub-container .sub-aud-container:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    box-shadow: 0 0 15px 7.5px #ecc09d33;
+}
+
+#main-content #submission-gallery .submission.audio  .audio-sub-container .sub-aud-container audio {
+    display: block;
+    width: 100%;
+}
+
+#main-content #submission-gallery .submission.audio  .sub-info.audio-about {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-content #submission-gallery .submission.audio  .sub-info.audio-about .about-container {
+    width: 45%;
+}
+
+/*Video Submission*/
+#main-content #submission-gallery .submission.video.landscape .sub-vid-container {
+    width: 87%;
+    margin: 0 auto;
+    object-fit: cover;
+    border: 15px ridge #7e005e;
+    box-shadow: 0 0 15px 7.5px #ecc09d1a;
+    transition: .5s ease-in-out;
+}
+
+#main-content #submission-gallery .submission.video.landscape .sub-vid-container video {
+    width: 100%;
+    display: block;
 }
 
 @media screen and (max-width: 768px) {
