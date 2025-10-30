@@ -181,7 +181,9 @@ a {
 }
 
 .styled-submitbutton:hover,
-.styled-footer:hover {
+.styled-footer:hover,
+#showbutton:hover,
+#showbutton-hero:hover {
     background-color: #4aaad0;
     transition: .45s;
 }
@@ -1197,6 +1199,17 @@ a {
 #main-content #submission-gallery .submission.video.landscape .sub-vid-container video {
     width: 100%;
     display: block;
+}
+
+body #main-content .showcase-vid-container {
+    width: 100vw;
+    background-color: black;
+    text-align: center;
+    
+}
+
+body #main-content .showcase-vid-container video {
+    width: 80%;
 }
 
 @media screen and (max-width: 768px) {
