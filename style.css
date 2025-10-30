@@ -47,7 +47,7 @@ body {
 }
 
 h1 {
-    font-family: 'Great Sejagad';
+    font-family: "Great Sejagad";
     font-weight: normal;
     font-size: 7.5vw;
     color: #7e005e;
@@ -61,7 +61,7 @@ h2 {
     text-align: center;
     margin-top: 10%; 
     margin-bottom: 2%;
-    font-family: 'Great Sejagad';
+    font-family: "Great Sejagad";
     font-weight: normal;
     font-size: 5vw;
 }
