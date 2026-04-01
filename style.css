@@ -1,0 +1,102 @@
+/*
+    Style Notes: 
+    Main Colors: 
+    #7e005e
+    #981e7a
+    Accent Colors
+    #4aaad0
+    #9deaec
+    #27B50A
+    Body Font Family:
+    Avenir
+    Optional Header Family:
+    Great Sejagad
+    Primary Header Family:
+    Bebas Neue
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url('../fonts/BebasNeue-Regular.ttf') format('ttf');
+    src: url('../fonts/BebasNeue-Regular.woff') format('woff');
+    src: url('../fonts/BebasNeue-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Great Sejagad";
+    src: url('../fonts/GreatSejagad.ttf') format('ttf');
+    src: url('../fonts/GreatSejagad.woff') format('woff');
+    src: url('../fonts/Great\ Sejagad.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Avenir LT STD";
+    src: url('../fonts/AvenirLTStd-Roman.otf') format('otf');
+    src: url('../fonts/AvenirLTStd-Roman.woff') format('woff');
+    src: url('../fonts/AvenirLTStd-Roman.woff2') format('woff2');
+}
+
+body {
+    margin: 0px;
+    font-family: "Avenir LT STD";
+    background-color: black;
+}
+
+h1 {
+    font-family: "Great Sejagad";
+    font-weight: normal;
+    font-size: 7.5vw;
+    color: #7e005e;
+    text-align: center;
+    margin: 0;
+    text-shadow: .25px .25px white;
+}
+
+h2 {
+    color: #7e005e;
+    text-align: center;
+    margin-top: 10%; 
+    margin-bottom: 2%;
+    font-family: "Great Sejagad";
+    font-weight: normal;
+    font-size: 5vw;
+}
+
+#enter-button {
+    margin: 5% auto;
+    width: 40%;
+}
+
+.button {
+    padding: 5%;
+    font-size: 4vw;
+    background-color: #7e005e;
+    background-image: linear-gradient(
+        to top,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%) 30%,
+        transparent
+    );
+    font-family: "Bebas Neue";
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    text-decoration: none;
+    display: block;
+    line-height: 1;
+}
+
+.button:hover {
+    background-color: #4aaad0;
+    transition: .45s;
+}
+
+.button:active {
+    box-shadow:
+        inset -2px -2px 3px #9de9ec53,
+        inset 2px 2px 3px rgb(0 0 0 / 30%);
+}

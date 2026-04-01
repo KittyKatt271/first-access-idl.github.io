@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Promotional Artwork</title>
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"
+        >
+        <link href="css/footer.css" rel="stylesheet">
+        <link href="css/headerstyle.css" rel="stylesheet">
+        <link href="css/submission-form.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/lightbox.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Begin Header Bar-->
+        <div id="header" class="flex-container-header">
+            <div id="header-logo-container" class="column-header">
+                <a href="index.html">
+                    <img
+                        src="images/first-logo-white.png"
+                        alt="FIRST Institute Logo"
+                        id="header-logo"
+                    >
+                </a>
+            </div>
+
+            <div id="gallery-drop" class="column-header dropdown-container">
+                <a href="galleries.html">
+                    <h1>
+                        Galleries
+                        <!--<sub>
+                            <sup>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </sup>
+                        </sub>-->
+                    </h1>
+                </a>
+
+                <!--<div class="dropdown-menu">
+                    <a href="galleries/dfvp.html">
+                        Digital Film & Video Production
+                    </a>
+
+                    <a href="galleries/dp.html">
+                        Digital Photography
+                    </a>
+
+                    <a href="galleries/gdwd.html">
+                        Graphic Design & Web Development
+                    </a>
+
+                    <a href="galleries/rasp.html">
+                        Recording Arts & Show Produciton
+                    </a>
+                </div>-->
+            </div>
+
+            <div id="header-count" class="column-header">
+                <div id="showcountdown-timer">
+                    <span id="showdays"></span> :
+                    <span id="showhours"></span> :
+                    <span id="showminutes"></span> :
+                    <span id="showseconds"></span> 
+                </div>
+
+                <a 
+                    id="showbutton" 
+                    hidden
+                    class="styled"
+                    href="showcase.html"
+                >
+                    View Show
+                </a>
+            </div>
+
+            <div id="guideline-drop" class="column-header dropdown-container">
+                <a href="guidelines.html">
+                    <h1>
+                        Guidelines
+                        <sub>
+                            <sup>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </sup>
+                        </sub>
+                    </h1>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="guidelines.html#enter">
+                        How to Enter
+                    </a>
+
+                    <a href="guidelines.html#content-restrict">
+                        Content Restrictions
+                    </a>
+
+                    <a href="guidelines.html#file-req">
+                        File Requirements
+                    </a>
+
+                    <a href="guidelines.html#asset-accred">
+                        Asset Accreditation
+                    </a>
+
+                    <a href="guidelines.html#prompts">
+                        Prompts
+                    </a>
+                </div>
+            </div>
+
+            <div id="sub-button" class="column-header">
+                <div id="submitcountdown-timer" hidden>
+                    <span id="submitdays"></span> :
+                    <span id="submithours"></span> :
+                    <span id="submitminutes"></span> :
+                    <span id="submitseconds"></span> 
+                </div>
+                <button 
+                    id="submitbutton" 
+                    class="styled-submitbutton" 
+                    onclick="document.getElementById('modal').style.display='block'"
+                >
+                    Submit Now 
+                </button>
+
+                <h3 id="submittext" class="submit-closed" hidden>
+                    Submissions Closed
+                </h3>
+            </div>
+        </div>  
+        <!--End Header Bar-->       
+        
+       <!--Begin Submission Modal-->
+        <div id="modal" hidden>
+            <div id="modal-overlay"></div>
+            <div id="modal-form">
+                <span 
+                    onclick="document.getElementById('modal').style.display='none'"
+                >
+                    <div id="close">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </span>
+
+                <div id="sub-form">
+                    <fieldset>
+                        <legend>Submission Form</legend>
+                        <form 
+                            method="POST" 
+                            action="https://formcarry.com/s/vde0EDcUN5A" 
+                            enctype="multipart/form-data"
+                            id="myForm"
+                        >
+                            <label for="first-name last-name">
+                                Artist Name:
+                            </label>
+                            <br>
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                                placeholder="First Name..."
+                                required
+                                size="30"
+                            />
+
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="last-name"
+                                placeholder="Last Name..."
+                                required
+                                size="30"
+                            />
+
+                            <br>
+
+                            <div class="flex-container-form">
+                                <div class="column-form course">
+                                    <label for="course-program">
+                                        Course Program:
+                                    </label>
+                                    <select name="course" id="course-program">
+                                        <option value="">
+                                            --Which Program is/was the Artist 
+                                            Enrolled In?--
+                                        </option>
+
+                                        <option value="dfvp">
+                                            Digitial Film & Video Production
+                                        </option>
+
+                                        <option value="dp">
+                                            Digitial Photography
+                                        </option>
+
+                                        <option value="gdwd">
+                                            Graphic Design & Web Development
+                                        </option>
+
+                                        <option value="rasp">
+                                            Recording Arts & Show Production
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <div class="column-form cohort">
+                                    <label for="cohort">Cohort #:</label>
+                                    <input
+                                        type="text"
+                                        id="cohort"
+                                        name="cohort"
+                                        placeholder="Cohort #..."
+                                        required
+                                        maxlength ="8"
+                                        size="18"
+                                    />
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <label for="email">Student Email:</label>
+                            <br>
+                            <input 
+                                type="email" 
+                                name="email"
+                                id="email" 
+                                size="67" 
+                                placeholder="Student Email..."
+                                required 
+                            />
+
+                            <br>
+
+                            <div class="flex-container-form">
+                                <div class="input_container" id="upload-block">
+                                    <h4>Upload Your File:</h4>
+                                    <br>
+                                    <label 
+                                        for="files" 
+                                        class="btn" 
+                                        id="file-name-display"
+                                    >
+                                        Browse Files
+                                    </label>
+                                    <input 
+                                        id="files" 
+                                        name="files"
+                                        style="display:none;" 
+                                        type="file"
+                                        required
+                                    >
+                                </div>
+
+                                <div id="about-section">
+                                    <label for="about-piece">
+                                        About Your Piece:
+                                    </label>
+                                    <br>
+                                    <textarea 
+                                        id="about-piece" 
+                                        name="about-piece" 
+                                        placeholder="Say something about your submission piece..."
+                                        required
+                                        rows="2" 
+                                        cols="31"
+                                    ></textarea> 
+                                    <!--Dirty for functionality of placeholder-->
+
+                                    <label for="about-artist">
+                                        About the Artist:
+                                    </label>
+                                    <br>
+                                    <textarea 
+                                        id="about-artist" 
+                                        name="about-artist" 
+                                        placeholder="Say something about yourself..."
+                                        required
+                                        rows="2" 
+                                        cols="31"
+                                    ></textarea> 
+                                    <!--Dirty for functionality of placeholder-->
+                                </div>
+                            </div>
+                            
+                            <label for="asset-credit">
+                                Asset Accreditation:
+                            </label>
+                            <br>
+                            <textarea 
+                                id="asset-credit" 
+                                name="asset-credit" 
+                                placeholder="List any required accreditation for assets used in your submission..."
+                                rows="2" 
+                                cols="68"
+                            ></textarea> 
+                            <!--Dirty for functionality of placeholder-->
+
+                            <button 
+                                id="form-submitbutton" 
+                                class="styled" 
+                                type="submit"
+                            >
+                                Submit Now 
+                            </button>
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <!--End Submission Form Modal-->
+
+        <!--Begin Main Content-->
+        <div id="main-content" class="gallery">
+            <h1 id="gallery-head">Submission Gallery</h1>
+            
+            <h2>Please view on Desktop for best results.</h2>
+
+            <div id="submission-gallery">
+                <div class="submission square extra-text">
+                    <div class="sub-info">
+                        <h2>Crossroads at Twilight</h2>
+                    </div>
+
+                    <div class="flex-container">                    
+                        <div class="sub-img-container">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/crossroads-at-twilight.jpg"
+                                alt="Crossroads at Twilight - Graphic Design Submission by Chloe Kistler"
+                            >
+                        </div>
+
+                        <div class="sub-info">
+                            <h3>Created by: <span>Chloe Kistler</span></h3>
+
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Graphic Design & Web Development
+                                </h5>
+
+                                <h5>Cohort: 6027</h5>
+                            </div>
+
+                            <h4>About the Artist</h4>
+
+                            <p>
+                                My name is Chloe Kistler, and I am a Graphic Design 
+                                and Web Development Student here at F.I.R.S.T. . My 
+                                passion for Graphic Design started fast and the need 
+                                to learn more has grown even faster. I love finding 
+                                creative ways to make visuals that connect with 
+                                people. Whether it is with layouts, colors, or 
+                                typography- I draw inspiration through everyday 
+                                life, music and early 2000’s aesthetics. Graphic 
+                                design has become my favorite way of using my 
+                                creativity, and I don’t expect it to stop anytime 
+                                soon!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="sub-info">
+                        <h4>About the Piece</h4>
+
+                        <div class="p-flex-container">
+                            <div class="p-container large">
+                                <p class="margin">
+                                    This image radiates that perfect early-2000s 
+                                    Halloween nostalgia — like something pulled straight 
+                                    from a Goosebumps cover, or the background of a 
+                                    Flash game on AddictingGames.com.
+                                </p>
+
+                                <p>
+                                    The giant orange moon overlooks the sky, giving off 
+                                    those moody gradients, the witch on her broomstick 
+                                    feels like she’s about to glide across your old 
+                                    monitor, chased by vector bats that look like they 
+                                    were cut from construction paper. The 
+                                    purple-to-orange sky gradient screams spooky desktop 
+                                    wallpaper circa 2004, while the silhouetted trees 
+                                    bring back memories of Halloween clip art and 
+                                    pumpkin-carving stencils you’d print.
+                                </p>
+                            </div>
+
+                            <div class="p-container short">
+                                <p>
+                                    Even the crooked wooden signs pointing to “Black Cat 
+                                    Tavern,” “Art Show,” and “Ghostly Graves” feel like 
+                                    they’d belong in an early Club Penguin Halloween 
+                                    Party. It’s got that comforting mix of eerie and 
+                                    playful—the kind of digital eeriness that lived in 
+                                    the era of Haunted Mansion screensavers, creepy MIDI 
+                                    soundtracks, and flashlight games on Miniclip. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission square flipped">
+                    <div class="sub-img-container">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/soul-sucker.jpg"
+                            alt="Soul Sucker - Photography Submission by Amy Smith"
+                        >
+                    </div>
+
+                    <div class="sub-info">
+                        <h2>Soul Sucker</h2>
+
+                        <h3>Created by: <span>Amy Smith</span></h3>
+
+                        <div class="student-info">
+                            <h5 class="course">Digital Photography</h5>
+
+                            <h5 hidden>Cohort: </h5>
+                        </div>
+
+                        <h4>About the Artist</h4>
+
+                        <p class="p-too-long">
+                            Amy is a 41 yr old creative force with a taste for 
+                            the eerie and evocative. Whether crafting haunting 
+                            visuals like “Soul Sucker” or curating dark, 
+                            atmospheric moments, Amy blends emotion and 
+                            imagination to leave a lasting impression. Driven by 
+                            mood, mystery, and meaning, Amy's work invites 
+                            viewers to look deeper—and feel something 
+                            unforgettable.
+                        </p>
+
+                        <h4>About the Piece</h4>
+
+                        <p class="p-too-long">
+                            In the suffocating stillness of night, a lone figure 
+                            lies paralyzed in bed—eyes wide with dread, breath 
+                            caught between worlds. From the shadows above, a 
+                            monstrous entity emerges, its jagged teeth glinting 
+                            in the dim light, fur bristling with malevolence. It 
+                            hovers like a living nightmare, feeding on fear.
+                        </p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission video landscape">
+                    <div class="sub-info header">
+                        <h2>Driving Me Crazy</h2>
+
+                        <div class="student-info">
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Digital Film & Video Production
+                                </h5>
+
+                                <h5 hidden>Cohort: </h5>
+                            </div>
+
+                            <h3>Created by: <span>Dustin Campbell</span></h3>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-vid-container">
+                        <video controls
+                            class="galleryVideo"
+                            src="video-submissions/Driving-Me-Crazy-Final-Version_compressed.mp4"
+                            alt="Driving Me Crazy - Film Submission by Dustin Campbell"
+                        >
+                            Sorry, your browser doesn't support the <video> tag
+                        </video>
+                    </div>
+
+                    <div class="sub-info container">
+                        <div class="student-info">
+                            <h4>About the Artist</h4>
+
+                            <p>
+                                This film was brought to life by a small group 
+                                of very hard working and dedicated artists who 
+                                above all else possess a desire to produce 
+                                cinematic films and short films.
+                            </p>
+                        </div>
+
+                        <div class="student-info">
+                            <h4>About the Piece</h4>
+
+                            <p>
+                                A self contained story of horror and suspense 
+                                sets up the events of one man's dark secret and 
+                                one woman's unfortunate and untimely incident. 
+                                An attempt was made to bring a script to life in 
+                                a short amount of time and with severally 
+                                limited resources, the product speaks to this.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission">
+                    <div class="sub-img-container ">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/butcherman-hotel-jeremiah-cherubin.jpg"
+                            alt="Butcherman Hotel - Photography Submission by Jeremiah Cherubin"
+                        >
+                    </div>
+
+                    <div class="sub-info">
+                        <h2>Butcherman Hotel</h2>
+
+                        <h3>Created by: <span>Jeremiah Cherubin</span></h3>
+
+                        <div class="student-info">
+                            <h5 class="course">Digital Photography</h5>
+
+                            <h5>Cohort: 3017</h5>
+                        </div>
+
+                        <h4>About the Artist</h4>
+
+                        <p>
+                            I really love photography because there is a lot of 
+                            emotions put into these photographs and there's also 
+                            the different compositions and techniques that 
+                            people use in their photography. I really love how 
+                            using props brings everything together.
+                        </p>
+
+                        <h4>About the Piece</h4>
+
+                        <p>
+                            So this piece was inspired by the tower of terror 
+                            because the tower of terror is very frightening to 
+                            some people.
+                        </p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission with-additional-images flipped">
+                    <div class="submission">
+                        <div class="sub-img-container ">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/The-Black-Cat-Compressed-Gif-loop.gif"
+                                alt="The Black Cat - Graphic Design Submission by Katt Woodworth"
+                            >
+                        </div>
+
+                        <div class="sub-info">
+                            <h2>The Black Cat</h2>
+
+                            <h3>Created by: <span>Katt Woodworth</span></h3>
+
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Graphic Design & Web Development
+                                </h5>
+
+                                <h5>Cohort: 6027</h5>
+                            </div>
+
+                            <h4>About the Artist</h4>
+
+                            <p class="p-too-long">
+                                Katt Woodworth is an aspiring graphic and web 
+                                designer, with a passion of storytelling and 
+                                atmosphere. Drawing inspiration from horror, gothic, 
+                                and fantasy themes, her work explores the emotional 
+                                depth and haunting beauty found within the darkness.
+
+                            </p>
+
+                            <h4>About the Piece</h4>
+
+                            <p class="p-too-long">
+                                Inspired by Edgar Allan Poe's “The Black Cat,” this 
+                                piece captures the story's descent into madness, 
+                                where guilt festers into blinding rage and echoes a 
+                                mind unraveling beneath the weight of its own deeds. 
+                                Through the interplay of shadow and flame, it 
+                                reflects key elements of the tale, providing a 
+                                visual representation of the narrative.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2 class="second-header">Additional Imagery</h2>
+
+                    <div class="additional-images">
+                        <div class="sub-img-container ">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/The-Black-Cat-Still-V1.jpg"
+                                alt="The Black Cat Still 1- Graphic Design Submission by Katt Woodworth"
+                            >
+                        </div>
+
+                        <div class="sub-img-container ">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/The-Black-Cat-Still-V2.jpg"
+                                alt="The Black Cat Still 2 - Graphic Design Submission by Katt Woodworth"
+                            >
+                        </div>
+
+                        <div class="sub-img-container ">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/The-Black-Cat-Still-V3.jpg"
+                                alt="The Black Cat Still 3- Graphic Design Submission by Katt Woodworth"
+                            >
+                        </div>
+
+                        <div class="sub-img-container ">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/The-Black-Cat-Still-V4.jpg"
+                                alt="The Black Cat Still 4- Graphic Design Submission by Katt Woodworth"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission landscape">
+                    <div class="sub-info header">
+                        <h2>The Seven Characters of Halloween</h2>
+
+                        <div class="student-info">
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Graphic Design & Web Development
+                                </h5>
+
+                                <h5>Cohort: 6027</h5>
+                            </div>
+
+                            <h3>Created by: <span>Bryce Vaughan</span></h3>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-img-container landscape">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/the-seven-characters-of-halloween.PNG"
+                            alt="The Seven Characters of Halloween - Graphic Design Submission by Bryce Vaughan"
+                        >
+                    </div>
+
+                    <div class="sub-info container">
+                        <div class="student-info shorter">
+                            <h4>About the Artist</h4>
+
+                            <p>
+                                I'm a 23-year-old graphic design student who takes a 
+                                lot of inspiration from older animated media 
+                                (especially from video games and cartoons of the 
+                                time), and tries to incorporate that into my own 
+                                creations, wherever possible.
+                            </p>
+                        </div>
+
+                        <div class="student-info longer">
+                            <h4>About the Piece</h4>
+
+                            <p>
+                                I went with a more lighthearted and cartoony spin on 
+                                the whole Halloween theme in this one, featuring the 
+                                seven unnamed characters (the skeleton, ghost, black 
+                                cat, and Jack-O-Lantern, confronting an evil witch, 
+                                vampire, and bat). Outside of the wider mix of 
+                                smaller inspirations (in terms of character choice 
+                                and such), the only true inspiration I can think of 
+                                for this one is an earlier, unrelated piece that I 
+                                drew almost a week prior to this. Other than that, 
+                                you could say that this was basically improvised.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission audio">
+                    <div class="audio-sub-container">
+                        <div class="sub-aud-container ">
+                        <audio 
+                                controls 
+                                src="audio-submissions/no-one-home.mp3"
+                                alt="No One Home - Recording Submission by Mel Long"
+                            >
+                                Your browser does not support the <audio> element.
+                            </audio>
+                        </div>
+
+                        <div class="sub-info audio-title">
+                            <h2>No One Home</h2>
+
+                            <h3>Created by: <span>Mel Long</span></h3>
+
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Recording Arts & Show Production
+                                </h5>
+
+                                <h5>Cohort: 351</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub-info audio-about">
+                        <div class="about-container">
+                            <h4>About the Artist</h4>
+
+                            <p>
+                                Once an aspiring book editor, Mel Long is following 
+                                a new dream to become an audio engineer. She had no 
+                                idea what to expect when she began her journey at 
+                                F.I.R.S.T. Institute, and now she is thrilled to be 
+                                here. No One Home is one of the six songs she made 
+                                in 101 and her classmates' favorite.
+                            </p>
+                        </div>
+
+                        <div class="about-container">
+                            <h4>About the Piece</h4>
+
+                            <p>
+                                Have you ever had a nightmare that you were left all 
+                                alone in the world? You know that feeling of dread 
+                                and loneliness that washes over you? That is what No 
+                                One Home is meant to encompass: those moments when 
+                                you feel lost and alone and don't know what to do 
+                                ... because you never imagined there'd be a time 
+                                when no one was there for you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission landscape">
+                    <div class="sub-info header">
+                        <h2>The Plague Doctor</h2>
+
+                        <div class="student-info">
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Digital Photography
+                                </h5>
+
+                                <h5>Cohort: 7017</h5>
+                            </div>
+
+                            <h3>Created by: <span>Daniel LaFond</span></h3>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-img-container landscape">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/the-plague-doctor.jpg"
+                            alt="The Plague Doctor - Photography Submission by Daniel LaFond"
+                        >
+                    </div>
+
+                    <div class="sub-info container">
+                        <div class="student-info">
+                            <h4>About the Artist</h4>
+
+                            <p>
+                                I am a 43-year-old father of four currently 
+                                pursuing a degree in digital photography. My 
+                                goal is to establish a photography studio that 
+                                specializes in portraiture and fine art, 
+                                combining technical expertise with creative 
+                                vision to deliver compelling, high-quality 
+                                imagery.
+                            </p>
+                        </div>
+
+                        <div class="student-info">
+                            <h4>About the Piece</h4>
+
+                            <p>
+                                The plague doctor waits in silence, mask 
+                                gleaming, hands poised. His next victim...ah, 
+                                patient draws near... unaware of the cure that 
+                                may cost more than the disease.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission with-additional-images flipped">
+                    <div class="submission">
+                        <div class="sub-img-container marsh">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/marshpuffers-backstory.jpg"
+                                alt="Marshpuffers Backstory - Graphic Design Submission by Jose Pomales"
+                            >
+                        </div>
+
+                        <div class="sub-info">
+                            <h2>Marshpuffers</h2>
+
+                            <h3>Created by: <span>Jose Pomales</span></h3>
+
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Graphic Design & Web Development
+                                </h5>
+
+                                <h5>Cohort: 2025</h5>
+                            </div>
+
+                            <h4>About the Artist</h4>
+
+                            <p>
+                                I'm a graphic designer who enjoys working on 
+                                projects and logos in Adobe Illustrator, 
+                                Photoshop, InDesign, etc. I also enjoy 
+                                collaborating with others on their projects and 
+                                more.
+
+                            </p>
+
+                            <h4>About the Piece</h4>
+
+                            <p>
+                                From 102 I created The MarshPuffers the three 
+                                marshmallow mascots for my cereal project. Each  
+                                The three flavored marshmallows that will give 
+                                everyone the taste of their lifetime, and enjoy 
+                                some tasty s'mores.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2 class="second-header">Additional Imagery</h2>
+
+                    <div class="additional-images">
+                        <div class="sub-img-container marsh ">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/marshpuffers-emote.jpg"
+                                alt="Marshpuffers Emotions - Graphic Design Submission by Jose Pomales"
+                            >
+                        </div>
+
+                        <div class="sub-img-container marsh">
+                            <img
+                                class="galleryImage"
+                                src="images/submissions/marshpuffers-mockup.jpg"
+                                alt="Marshpuffers Mockups - Graphic Design Submission by Jose Pomales"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission black-heart">
+                    <div class="sub-img-container">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/the-blackened-heart.jpg"
+                            alt="The Blackened Heart - Photography Submission by Abram Spinney"
+                        >
+                    </div>
+
+                    <div class="sub-info">
+                        <h2>The Blackened Heart</h2>
+
+                        <h3>Created by: <span>Abram Spinney</span></h3>
+
+                        <div class="student-info">
+                            <h5 class="course">Digital Photography</h5>
+
+                            <h5>Cohort: 7015</h5>
+                        </div>
+
+                        <h4>About the Artist</h4>
+
+                        <p class="p-too-long">
+                            I'm a fan of all things spooky and mysterious which 
+                            I enjoy conveying in both photography and writing. 
+                            Horror has been very influential for me as both a 
+                            creative and an individual. I particularly enjoy 
+                            using props and other materials on hand to create 
+                            visual that express the frightening and humorous 
+                            nature of the genre. Outside of Horror, I also have 
+                            a fondness for old architecture, abandoned 
+                            structures, nature, and sunsets.
+                        </p>
+
+                        <h4>About the Piece</h4>
+
+                        <p class="p-too-long">
+                            A very experimental piece I created during the 
+                            process of an assignment. It presents a blackened 
+                            heart where its cruel and malevolence manifests 
+                            itself as a twisted and grotesque spirit. The items 
+                            used were a few Halloween props I acquired, a single 
+                            flashlight, and a pair of false candles which 
+                            working together created this sight of evil's 
+                            emergence.
+                        </p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission video landscape">
+                    <div class="sub-info header">
+                        <h2>
+                            D-LON DA JUICE MAKING <br> DARK TRAP TYPE BEAT ON 
+                            MPC LIVE 2 
+                        </h2>
+
+                        <div class="student-info">
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Recording Arts & Show Production
+                                </h5>
+
+                                <h5>Cohort: 4026</h5>
+                            </div>
+
+                            <h3>Created by: <span>De Lontae Whitaker</span></h3>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-vid-container">
+                        <video controls
+                            class="galleryVideo"
+                            src="video-submissions/da-juice.mp4"
+                            alt="D-LON DA JUICE MAKING DARK TRAP TYPE BEAT ON MPC LIVE 2 - Recording Submission by De Lontae Whitaker"
+                        >
+                            Sorry, your browser doesn't support the <video> tag
+                        </video>
+                    </div>
+
+                    <div class="sub-info container">
+                        <div class="student-info">
+                            <h4>About the Artist</h4>
+
+                            <p class="longer p-too-long">
+                                Born and raised in Houston, Texas, I’m an audio 
+                                engineer and sound artist with a lifelong 
+                                devotion to the power of music. My journey began 
+                                in the early 2000s with the underground label 
+                                Beltway 8 Records, where I performed as a rapper 
+                                and first discovered my passion for making 
+                                beats. Since then, I’ve worked with numerous 
+                                talented artists, developing a reputation for 
+                                creative production and sharp engineering 
+                                skills. I’ve also had the privilege of sharing 
+                                the stage with one of my greatest influences, 
+                                Bizzy Bone, on multiple occasions—moments that 
+                                fueled my drive to master the art of sound. 
+                                Today, I merge my technical expertise with a 
+                                deep spiritual focus through sound therapy, 
+                                using frequency and vibration as tools for 
+                                healing and transformation. Every project I take 
+                                on is driven by the same purpose: to create 
+                                sound that moves, inspires, and elevates the 
+                                human spirit.
+                            </p>
+                        </div>
+
+                        <div class="student-info">
+                            <h4>About the Piece</h4>
+
+                            <p class="shorter p-too-long">
+                                I created this video to showcase my skills in 
+                                videography, graphic design, and beat making. 
+                                The outboard gear that was used to make this 
+                                beat is a MPC LIVE 2.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission">
+                    <div class="sub-img-container ">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/Killer.jpg"
+                            alt="Killer - Photography Submission by Ethan Bradley"
+                        >
+                    </div>
+
+                    <div class="sub-info">
+                        <h2>Killer</h2>
+
+                        <h3>Created by: <span>Ethan Bradley</span></h3>
+
+                        <div class="student-info">
+                            <h5 class="course">Digital Photography</h5>
+
+                            <h5>Cohort: 3017</h5>
+                        </div>
+
+                        <h4>About the Artist</h4>
+
+                        <p>
+                            I'I like making photos that are dark, moody, and 
+                            dramatic.
+                        </p>
+
+                        <h4>About the Piece</h4>
+
+                        <p>
+                            Born and raised a killer, a man with no morals and 
+                            no purpose other than killing whoever stands in the 
+                            way of his mission.
+                        </p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="submission landscape">
+                    <div class="sub-info header">
+                        <h2>Whispers of the Moon</h2>
+
+                        <div class="student-info">
+                            <div class="student-info">
+                                <h5 class="course">
+                                    Graphic Design & Web Development
+                                </h5>
+
+                                <h5>Cohort: 7007</h5>
+                            </div>
+
+                            <h3>Created by: <span>Rachel Johnson</span></h3>
+                        </div>
+                        <div class="student-info">
+                            
+                        </div>
+                    </div>
+
+                    <div class="sub-img-container landscape multi">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/v2_compressed.png"
+                            alt="Whispers of the Moon Version 2 - Photography Submission by Rachel Johnson"
+                        >
+                    </div>
+                    
+                    <div class="sub-img-container landscape multi">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/v3_compressed.png"
+                            alt="Whispers of the Moon Version 1 - Photography Submission by Rachel Johnson"
+                        >
+                    </div>
+
+                    <div class="sub-img-container landscape">
+                        <img
+                            class="galleryImage"
+                            src="images/submissions/v1_compressed.png"
+                            alt="Whispers of the Moon Version 3 - Photography Submission by Rachel Johnson"
+                        >
+                    </div>
+
+                    <div class="sub-info container">
+                        <div class="student-info pic-instead-p">
+                            <h4>About the Artist</h4>
+
+                            <div class="sub-img-container about-img">
+                                <img
+                                    class="galleryImage"
+                                    src="images/submissions/AboutMe_compressed.jpg"
+                                    alt="About the Artist - Rachel Johnson"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="student-info pic-instead-p">
+                            <h4>About the Piece</h4>
+
+                            <div class="sub-img-container about-img">
+                                <img
+                                    class="galleryImage"
+                                    src="images/submissions/AboutPiece_compressed.jpg"
+                                    alt="About the Piece - Rachel Johnson"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="thanks">Thank You!</h2>
+        </div>
+        <!--End Main Content-->
+
+        <!-- Lightbox Code -->
+        <div id="lightboxContainer">
+            <div id="lightboxBackground" class="closer"></div>
+            <img id="lightbox" src="" alt="">
+            <span id="lightboxCloser" class="closer">×</span>
+        </div> 
+        <!-- End Lightbox Code -->
+        
+        <!--Begin Footer-->
+        <div id="footer">
+            <div class="flex-container-banner">
+                <div class="column-banner-img">
+                    <img 
+                        src="images/temp-banner-2.jpg"
+                        alt="temp banner"
+                        id="main-banner-image"
+                    >
+                </div>
+
+                <div class="column-banner-text">
+                    <h1 id="join">Join F.I.R.S.T.<br>Institute Today!</h1>
+                    
+                    <a 
+                        href="https://learn.first.edu/general-website-brochure?campaignid=1052"
+                        target="_blank"
+                    >
+                        <button id="downloadbutton" class="styled-footer">
+                            Download Brochure
+                        </button>
+                    </a>
+
+                    <a href="https://www.first.edu/apply/" target="_blank">
+                        <button id="applybutton" class="styled-footer">
+                            Apply Now
+                        </button>
+                    </a>
+                </div>
+            </div> 
+            
+            <div class="flex-container-footer">
+                <div class="flex-container-site-map">
+                    <div class="column-site-map">
+                        <h3 class="sitemap-h3">
+                            <a href="galleries.html">
+                                Galleries
+                            </a>
+                        </h3>
+
+                        <!--<ul class="footer-ul">
+                            <li class="footer-li">
+                                <a href="galleries/dfvp.html">
+                                    Digital Film & Video Production
+                                </a>
+                            </li>
+                            <li class="footer-li">
+                                <a href="galleries/dp.html">
+                                    Digital Photography
+                                </a>
+                            </li>
+                            <li class="footer-li">
+                                <a href="galleries/gdwd.html">
+                                    Graphic Design & Web Development
+                                </a>
+                            </li>
+                            <li class="footer-li">
+                                <a href="galleries/rasp.html">
+                                    Recording Arts & Show Production
+                                </a>
+                            </li>
+                        </ul>-->
+                    </div>
+
+                    <div class="column-site-map">
+                        <h3 class="sitemap-h3">
+                            <a href="guidelines.html">
+                                Guidelines
+                            </a>
+                        </h3>
+
+                        <ul class="footer-ul">
+                            <li class="footer-li">
+                                <a href="guidelines.html#enter">
+                                    How to Enter
+                                </a>
+                            </li>
+
+                            <li class="footer-li">
+                                <a href="guidelines.html#content-restrict">
+                                    Content Restrictions
+                                </a>
+                            </li>
+
+                            <li class="footer-li">
+                                <a href="guidelines.html#file-req">
+                                    File Requirements
+                                </a>
+                            </li>
+
+                            <li class="footer-li">
+                                <a href="guidelines.html#asset-accred">
+                                    Asset Accreditation
+                                </a>
+                            </li>
+
+                            <li class="footer-li">
+                                <a href="guidelines.html#prompts">
+                                    Prompts
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column-logo">
+                    <a href="index.html">
+                        <img 
+                            src="images/first-logo-white.png"
+                            alt="F.I.R.S.T. Institute Logo"
+                            id="footer-logo"
+                        >
+                    </a>
+
+                    <p id="slogan">CREATIVITY Meets Career</p>
+
+                    <h3 id="logos">
+                        <a 
+                            href="https://www.youtube.com/channel/UCgwtOgDipbC8RYXbMG4Q4aA"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a 
+                            href="https://www.linkedin.com/school/f.i.r.s.t.-institute/"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a 
+                            href="https://www.instagram.com/first_edu/"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a 
+                            href="https://www.facebook.com/FIRST.EDU"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </h3>
+
+                    <div class="flex-container-info">
+                        <div class="column">
+                            <p class="address">
+                                423 S Keller Road, Orlando, FL 32810
+                            </p>
+                        </div>
+
+                        <div class="column">
+                            <p class="phone">(407) 316-8310</p>
+                        </div>
+                    </div>
+
+                    <p class="cr">
+                        Copyright © 2025 F.I.R.ST. Institute
+                    </p>
+                </div>
+
+                <div class="column-buttons">
+                    <div id="f-showcountdown-timer">
+                        <span id="f-showdays"></span> :
+                        <span id="f-showhours"></span> :
+                        <span id="f-showminutes"></span> :
+                        <span id="f-showseconds"></span> 
+                    </div>
+
+                    <button 
+                        id="showbutton" 
+                        hidden
+                        class="styled"
+                    >
+                        View Show
+                    </button>
+
+                    <div id="f-submitcountdown-timer" hidden>
+                        <span id="f-submitdays"></span> :
+                        <span id="f-submithours"></span> :
+                        <span id="f-submitminutes"></span> :
+                        <span id="f-submitseconds"></span> 
+                    </div>
+
+                    <button hidden
+                        id="submitbutton" 
+                        class="styled-footer" 
+                        onclick="document.getElementById('modal').style.display='block'"
+                    >
+                        Submit Now 
+                    </button>
+
+                    <h3 id="submittext" class="submit-closed" >
+                        Submissions Closed
+                    </h3>
+                </div>
+
+                <div id="mobile-cr-info">
+                    <div class="flex-container-info">
+                        <div class="column">
+                            <p class="address">
+                                423 S Keller Road, Orlando, FL 32810
+                            </p>
+                        </div>
+
+                        <div class="column">
+                            <p class="phone">(407) 316-8310</p>
+                        </div>
+                    </div>
+
+                    <p class="cr">
+                        Copyright © 2025 F.I.R.ST. Institute
+                    </p>
+                </div>
+            </div>
+
+            <div id="developers" class="cr">
+                <p id="web-cred">
+                    Website developed by 
+                    <span>Katt Woodworth, founder of Little Katt's Curiosity</span>.
+                    <!--Dirty to keep a space from appearing before the period-->
+                </p>
+
+                <p id="hero-cred">
+                    Animated Hero designed & created by 
+                    <span>Rachel Johnson of Sirrae Michele Photography</span> 
+                    & 
+                    <span>Chloe Kistler, founder of CK Designs</span>.
+                </p>
+
+                <p id="access-cred">
+                    Event was planned by the 
+                    <span>members of F.I.R.S.T. Access IDL</span>.
+                    <br>
+                    All submissions were creatd by the 
+                    <span>Students & Alumni of F.I.R.S.T. Institute</span>.
+                </p>
+            </div>
+        </div>
+        <!--End Footer-->
+
+        <script src="java/subform.js"></script>
+        <script src="java/showcountdown.js"></script>
+        <script src="java/submitcountdown.js"></script>
+        <script src="java/f-showcountdown.js"></script>
+        <script src="java/f-submitcountdown.js"></script>
+        <script src="java/lightbox.js"></script>
+    </body>
+</html>
